@@ -1,0 +1,52 @@
+1)Explain the uses of NoSQL Databases in brief and list the current NoSQL databases
+which are available.
+
+Uses of NoSQL Database:
+ * Highly scalable
+ * It answers to the limitations of relational databases in handling Big Data requirements.
+ * It offers greater data model flexibility, horizontal scalability, and superior performance over relational databases.
+ * It handles large volumes of structured, semi-structured, and unstructured data.
+ * Low latency and high performance
+ * It follows modern development practices such as agile sprints, quick iterations, and frequent code pushes.
+ * It prefers object-oriented programming which is easy to use and flexible.
+ * It provides efficient, scale-out architecture instead of expensive, monolithic architecture.
+ * It provides Non-relational and schema-less data model.
+
+Current NoSQL databases:
+
+Document databases
+Graph stores 
+Key-value stores
+Wide-column stores
+
+*Document databases -It pairs each key with a complex data structure known as a document. 
+*Graph stores - used to store information about networks of data like social connections. It includes Neo4J and Giraph.
+*Key-value stores - simplest NoSQL databases. Every single item in the database is stored as a key along with its value. Examples  are Riak and Berkeley DB. 
+*Wide-column stores like Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows.
+
+======================================================================================================================================================================
+2)Explain the Differences between Hive and HBase in Brief with examples.
+
+Differences between Hive and HBase:
+
+ * Hive is an SQL-like engine which runs MapReduce jobs while HBase is a NoSQL key/value database on Hadoop.
+ * Hive can be used for analytical queries while HBase for real-time querying
+ * Hive allows for querying data stored on HDFS for analysis via HQL, an SQL-like language that gets translated to MapReduce jobs while Apache HBase is a NoSQL
+   key/value store which runs on top of HDFS.
+ * Hive does not provide interactive querying, it only runs batch processes on Hadoop while  HBase is defined as a cell, and each key consists of row-key, 
+   column family, column, and time-stamp.
+ * Hive’s partitioning feature allows running a filter query over data that is stored in separate folders, and only read the data which matches the query while HBase
+   Versioning is available so that previous values of the data can be fetched.
+ * Hive is a front end for parsing SQL statements, generating logical plans, optimizing logical plans, translating them into physical plans that are executed by 
+   MapReduce jobs and HBase is a real time, open source, column oriented, distributed NoSql database written in Java.
+ * Apache Hive is designed for  data warehouse system to ease the processing of adhoc queries on massive data sets stored in HDFS and  data aggregations while 
+   HBase is designed after Google’s BigTable and represents a key value column family store. It is built on top of Apache Hadoop.
+
+
+Examples:
+ 
+Hive should be used for analytical querying of data collected over a period of time for example calculating trends or website logs.
+HBase is perfect for real-time querying of Big Data for example Facebook use it for messaging and real-time analytics. 
+They may even be using it to count Facebook likes.
+
+========================================================================================================================================================================
